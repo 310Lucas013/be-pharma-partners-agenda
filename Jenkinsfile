@@ -11,7 +11,7 @@ pipeline {
       }
       stage('run test') {
         steps {
-            echo 'This is a test'
+            bat 'mvn test'
         }
       }
       stage('SonarQube analysis') {
