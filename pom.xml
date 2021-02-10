@@ -17,18 +17,7 @@
 		<java.version>11</java.version>
 	</properties>
 
-	<packaging>sonar-plugin</packaging>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.sonarsource.sonarqube</groupId>
-			<artifactId>sonar-plugin-api</artifactId>
-			<!-- minimal version of SonarQube to support. -->
-			<version>6.7</version>
-			<!-- mandatory scope -->
-			<scope>provided</scope>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -43,15 +32,6 @@
 
 	<build>
 		<plugins>
-
-			<plugin>
-				<groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
-				<artifactId>sonar-packaging-maven-plugin</artifactId>
-				<version>1.18.0.372</version>
-				<extensions>true</extensions>
-			</plugin>
-
-
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
