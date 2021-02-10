@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
     @Test
-    void addTwoNumbers() throws Throwable {
+    void addTwoNumbers() throws IllegalArgumentException {
         Calculator calculator = new Calculator();
         double number1 = 10;
         double number2 = 11;
@@ -19,7 +19,7 @@ class CalculatorTest {
     }
 
     @Test
-    void addingOneNumberBelow_0_ShouldThrow_IllegalArgumentException() throws Throwable{
+    void addingOneNumberBelow_0_ShouldThrow_IllegalArgumentException() throws Exception{
         Calculator calculator = new Calculator();
         double number1 = 10;
         double number2 = -1;
