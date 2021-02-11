@@ -22,7 +22,7 @@ class CalculatorTest {
     void addingOneNumberBelow_0_ShouldThrow_IllegalArgumentException() throws Exception{
         Calculator calculator = new Calculator();
         double number1 = 10;
-        double number2 = -2;
+        double number2 = -3;
 
         assertThrows(
                 IllegalArgumentException.class,
