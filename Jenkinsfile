@@ -4,11 +4,6 @@ pipeline {
     maven 'MAVEN_HOME'
   }
   stages {
-      stage('Compile') {
-        steps {
-          echo 'This is a compile'
-        }
-      }
       stage('run test') {
         steps {
             bat 'mvn test'
