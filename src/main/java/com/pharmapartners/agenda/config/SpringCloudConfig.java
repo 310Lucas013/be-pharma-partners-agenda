@@ -14,7 +14,7 @@ public class SpringCloudConfig {
                 .route("path_route", r -> r.path("/employees/**")
                         .uri("http://employee:5001"))
                 .route("path_route", r -> r.path("/credentials/**")
-                        .uri("http://credentials:5002"))
+                        .uri("http://localhost:8082"))
                 .route("path_route", r -> r.path("/patients/**")
                         .uri("http://patient-records:5003"))
                 .route("path_route", r -> r.path("/appointments/**")
