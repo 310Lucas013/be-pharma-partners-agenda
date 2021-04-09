@@ -12,15 +12,15 @@ public class SpringCloudConfig {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("path_route", r -> r.path("/employees/**")
-                        .uri("http://employee:5000"))
+                        .uri("http://employee:5001"))
                 .route("path_route", r -> r.path("/credentials/**")
-                        .uri("http://credentials:5000"))
+                        .uri("http://credentials:5002"))
                 .route("path_route", r -> r.path("/patients/**")
-                        .uri("http://patient-records:5000"))
+                        .uri("http://patient-records:5003"))
                 .route("path_route", r -> r.path("/appointments/**")
-                        .uri("http://appointments:5000"))
+                        .uri("http://appointments:5004"))
                 .route("path_route", r -> r.path("/locations/**")
-                        .uri("http://location:5000"))
+                        .uri("http://location:5005"))
                 .build();
     }
 }
